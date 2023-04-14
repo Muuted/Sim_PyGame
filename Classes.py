@@ -28,8 +28,9 @@ class Board(pygame.sprite.Sprite):
         self.x = x
         self.y = y
 
+    def draw(self):
+        pygame.draw.rect(window,self.color,(self.x, self.y, self.width, self.height))
 
-    pass
 
 
 if __name__ == "__main__":

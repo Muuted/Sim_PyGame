@@ -1,4 +1,4 @@
-from Classes import Water_drops,Board
+from Classes import WaterDrops,Board
 import pygame
 
 pygame.init()

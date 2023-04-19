@@ -18,9 +18,9 @@ class WaterDrops(pygame.sprite.Sprite):
 
 
 class Board(pygame.sprite.Sprite):
-    def _init_(self, color, width, height, xv, yv, x, y):
+    def _init_(self, color, width, height, x, y):
         pygame.sprite.Sprite.__init__(self)
-        self.colors = color
+        self.color = color
         self.width = width
         self.height = height
         self.xv = xv
@@ -28,7 +28,7 @@ class Board(pygame.sprite.Sprite):
         self.x = x
         self.y = y
 
-    def draw(self):
+    def draw(self,window):
         pygame.draw.rect(window,self.color,(self.x, self.y, self.width, self.height))
 
 

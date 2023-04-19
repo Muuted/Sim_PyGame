@@ -1,16 +1,22 @@
-from Classes import WaterDrops,Board
+from Classes import WaterDrops, Board
 import pygame
 
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+Screen_size = 1280, 720
+screen = pygame.display.set_mode(Screen_size)
 
 clock = pygame.time.Clock()
 running = True
 
 times = 0
 
-while running:
+print(Screen_size[0])
 
+rect_board = Board(
+    (255, 0, 0), 10, 5, 1280 / 2, 720 / 2
+)
+
+while running:
 
     screen.fill("black")
     pygame.display.flip()
@@ -23,17 +29,6 @@ while running:
     pass
 
 pygame.quit()
-
-
-
-
-
-
-
-
-
-
-
 
 if __name__ == "__main__":
     pass
